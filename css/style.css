@@ -483,6 +483,7 @@ svg path {
 }
 
 .body-spoller__text {
+  max-width: 17.4375rem;
   font-size: 0.75rem;
 }
 
