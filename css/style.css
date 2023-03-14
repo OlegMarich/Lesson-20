@@ -454,10 +454,10 @@ svg path {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .spoller-item-footer__title {
@@ -1802,6 +1802,8 @@ svg path {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 33.333%;
           flex: 0 1 33.333%;
@@ -1813,10 +1815,6 @@ svg path {
 .card-blog__image {
   padding-bottom: 76.9230769231%;
   position: relative;
-}
-
-.card-blog__image::before {
-  content: "";
 }
 
 .card-blog__image img {
@@ -1854,6 +1852,9 @@ svg path {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2033,6 +2034,15 @@ svg path {
     -webkit-column-gap: 2.5rem;
        -moz-column-gap: 2.5rem;
             column-gap: 2.5rem;
+  }
+}
+
+@media (min-width: 61.99875em) {
+  .spoller-item-footer__item {
+    text-align: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
 }
 
@@ -2883,13 +2893,6 @@ svg path {
             column-gap: 1.5625rem;
   }
 
-  .spoller-item-footer__item {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-
   .body-spoller__text {
     max-width: 56.25rem;
   }
@@ -2900,6 +2903,12 @@ svg path {
             justify-content: stretch;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .card-blog__body {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
   }
 }
 
@@ -3061,11 +3070,6 @@ svg path {
     display: none;
   }
 
-  .cards-courses__body {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-
   .benefits__navigation {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3091,13 +3095,6 @@ svg path {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-
-  .card-blog__body {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
-    max-width: 100%;
   }
 
   .decor-subscribe {
@@ -3126,6 +3123,11 @@ svg path {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .cards-courses__body {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .form__line {
@@ -3165,6 +3167,10 @@ svg path {
 
   .decor-team__item--7 {
     display: none;
+  }
+
+  .card-blog__body {
+    max-width: 100%;
   }
 }
 
