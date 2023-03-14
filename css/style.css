@@ -2101,10 +2101,6 @@ svg path {
     padding-bottom: 3.75rem;
   }
 
-  .body-spoller__text {
-    max-width: 17.4375rem;
-  }
-
   .bottom-footer__copyright {
     padding: 1.1875rem;
   }
@@ -2514,10 +2510,6 @@ svg path {
 
   .footer__main {
     padding-bottom: 1.5rem;
-  }
-
-  .body-spoller__text {
-    max-width: 6.25rem;
   }
 
   .bottom-footer__copyright {
@@ -3338,18 +3330,6 @@ svg path {
 @supports not (padding-bottom: clamp( 1.5rem , 0.7340425532rem  +  3.829787234vw , 3.75rem )) {
     .footer__main {
       padding-bottom: calc(1.5rem + 2.25 * (100vw - 20rem) / 58.75);
-    }
-}
-
-@supports (max-width: clamp( 6.25rem , 2.4414893617rem  +  19.0425531915vw , 17.4375rem )) {
-    .body-spoller__text {
-      max-width: clamp( 6.25rem , 2.4414893617rem  +  19.0425531915vw , 17.4375rem );
-    }
-}
-
-@supports not (max-width: clamp( 6.25rem , 2.4414893617rem  +  19.0425531915vw , 17.4375rem )) {
-    .body-spoller__text {
-      max-width: calc(6.25rem + 11.1875 * (100vw - 20rem) / 58.75);
     }
 }
 
